@@ -4,3 +4,5 @@ submission
 docs/screenshots
 __pycache__
 tests
+
+.env*

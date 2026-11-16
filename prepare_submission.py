@@ -5,8 +5,8 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 ROOT = Path(__file__).resolve().parent
 FILES = ["README.md", "USER_GUIDE.md", "METHODOLOGY.md", "SOURCES.md", "AI_PROMPTS.md",
          "CONTRIBUTIONS.md", "DEMO_RUNBOOK.md", "VALIDATION.md", "requirements.txt",
-         "app.py", "engine.py", "generate_data.py", "prepare_submission.py", ".gitignore"]
-DIRECTORIES = ["static", "data", "tests", "docs/prompts", "docs/screenshots"]
+         "vercel.json", ".python-version", ".vercelignore", "LICENSE", "app.py", "engine.py", "generate_data.py", "prepare_submission.py", ".gitignore"]
+DIRECTORIES = ["api", "static", "data", "tests", "docs/prompts", "docs/screenshots"]
 
 
 def main():

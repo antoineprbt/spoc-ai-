@@ -7,3 +7,5 @@ exports/
 submission/
 
 .vercel/
+.vercel
+.env*

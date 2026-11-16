@@ -34,3 +34,9 @@ Do not fill this table with hypothetical prompts. Add only prompts that were act
 | [Fill after use] | | | | | |
 
 For a long prompt, save its verbatim text as a new numbered file in `docs/prompts/` and reference that file. Retain failed or revised prompts when they materially contributed to the deliverable; do not retroactively rewrite them as if they were the original instructions.
+
+## Actual follow-up request — 16 November 2026
+
+> ok , btwon bosse ds le rpeo github spoc-ai ( lui [https://github.com/antoineprbt/spoc-ai-](https://github.com/antoineprbt/spoc-ai-)) et btw je veux pas avoir à lanceru ne ocmmande pr relancer ! déploei sur vercel !
+
+Codex added a Vercel Python adapter, pushed the project to that repository, and deployed the same engine as a hosted application. This supersedes the initial local-only delivery scope; offline reproduction remains supported.

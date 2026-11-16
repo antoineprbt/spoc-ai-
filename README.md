@@ -6,6 +6,10 @@ A local browser application for ESSEC's **SPOC AI for Business — Advanced AI A
 
 **SIMULATION — SYNTHETIC DATA ONLY.** No cameras, external feeds, real facilities, identities, or operational systems are connected.
 
+## Open the hosted app
+
+Use https://spoc-ai-blacksite.vercel.app — no installation or terminal required. Hosted execution runs the same Python engine on Vercel. GitHub repository: https://github.com/antoineprbt/spoc-ai- . Local offline reproduction remains available below.
+
 ## Run it
 
 Prerequisites: **CPython 3.11–3.14 (excluding 3.14.1, which NetworkX does not support)**, `pip`, and a modern desktop browser. Development and verification used **Python 3.14.3 on macOS**. Other operating systems have not been manually verified. Internet access is needed once to install the pinned Python packages. After installation, the application runs locally without API keys, cloud services, external fonts, model downloads, or an internet connection.
