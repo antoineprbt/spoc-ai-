@@ -1,0 +1,2 @@
+# spoc-ai-
+cool project 
