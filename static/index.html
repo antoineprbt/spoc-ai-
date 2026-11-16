@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BLACKSITE — a local, synthetic crisis-operations simulation for ESSEC AI for Business.">
+  <title>BLACKSITE / Northstar Station</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="BLACKSITE home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 30 10v12L16 30 2 22V10Z"/><path d="m9 12 7-4 7 4v8l-7 4-7-4Z"/><path d="m9 12 14 8M23 12 9 20"/></svg><span>BLACKSITE<small>See the signal. Understand the incident.</small></span></a>
+    <div class="header-context"><span class="square-dot"></span> NORTHSTAR STATION <span class="slash">/</span> INTELLIGENCE WORKSPACE</div>
+    <div class="header-actions"><span id="engine-status" class="engine-state"><i></i> CONNECTING</span><button id="method-button" class="text-button">How it works <span>↗</span></button></div>
+  </header>
+  <div class="simulation-banner"><span class="simulation-label">SIMULATION — SYNTHETIC DATA ONLY</span><span>Fictional facility · Local processing · No live feeds</span></div>
+  <main>
+    <section class="workspace-heading">
+      <div><p class="eyebrow">OPERATIONS / EXERCISE ENVIRONMENT</p><h1>Operational overview<span class="heading-dot">.</span></h1><p class="subheading">Review unusual signals. Connect the evidence. Keep uncertainty in view.</p></div>
+      <div class="scenario-controls"><label for="scenario">SCENARIO<select id="scenario" disabled><option>Loading scenarios…</option></select></label><button id="run-button" class="primary" disabled><span class="play-icon">▶</span> Run simulation</button><button id="reset-button" class="icon-button" aria-label="Reset simulation" title="Reset simulation" disabled>↺</button></div>
+    </section>
+    <div id="error-banner" class="error-banner" role="alert" hidden></div>
+    <section class="metrics" aria-label="Simulation summary">
+      <div class="metric"><span class="metric-label">EVENTS PROCESSED</span><div><strong id="metric-events">00</strong><span class="metric-context">/ 14 signals</span></div></div>
+      <div class="metric"><span class="metric-label">SENSOR BUNDLES</span><div><strong id="metric-sensors">0<span class="denominator">/5</span></strong><span class="metric-context" id="sensor-caption">awaiting data</span></div></div>
+      <div class="metric"><span class="metric-label">DETECTED ANOMALIES</span><div><strong id="metric-anomalies">00</strong><span class="metric-context">model detections</span></div></div>
+      <div class="metric"><span class="metric-label">HIGHEST PRIORITY</span><div><strong id="metric-priority">—</strong><span id="priority-caption" class="metric-context">awaiting signals</span></div></div>
+      <div class="exercise-clock"><span class="metric-label">EXERCISE CLOCK</span><strong id="clock">22:14:00</strong><span>17 FEB 2030 · FICTIONAL TIME</span></div>
+    </section>
+    <div class="workspace-grid">
+      <section class="timeline-panel panel" aria-labelledby="timeline-title"><div class="panel-heading"><h2 id="timeline-title">Event timeline</h2><span id="timeline-count" class="count">00</span></div><div class="timeline-subheading"><span id="stream-state"><i class="status-dot"></i> STREAM READY</span><span>CHRONOLOGICAL ↓</span></div><div id="timeline" class="timeline"><div class="empty-timeline"><span class="empty-symbol">⌁</span><h3>Waiting for the first signal</h3><p>Run a scenario to follow sensor readings, camera observations, and field reports as they arrive.</p><span class="tiny-label">14 EVENTS · 2m 40s EXERCISE</span></div></div><div class="timeline-footer"><span class="status-dot"></span><span>Recorded synthetic stream</span></div></section>
+      <section class="center-workspace" aria-label="Facility and evidence">
+        <section class="map-panel panel"><div class="map-heading"><div class="view-tabs" role="tablist" aria-label="Workspace view"><button id="map-tab" class="view-tab active" role="tab" aria-selected="true" aria-controls="map-view" data-view="map">Facility map</button><button id="graph-tab" class="view-tab" role="tab" aria-selected="false" aria-controls="graph-view" data-view="graph">Event links</button><button id="data-tab" class="view-tab" role="tab" aria-selected="false" aria-controls="data-view" data-view="data">Sensor data</button></div><span class="map-code">NS / 01</span></div>
+          <div id="map-view" role="tabpanel" aria-labelledby="map-tab" class="map-view"><div class="map-overlay"><span class="eyebrow">NORTHSTAR STATION</span><span>Facility schematic · Ground level</span></div><div id="facility-map"></div><div class="map-legend"><span><i class="legend-box nominal"></i> No active alert</span><span><i class="legend-box alert"></i> Analyst review</span><span class="map-units">FICTIONAL GRID · NOT TO SCALE</span></div></div>
+          <div id="graph-view" role="tabpanel" aria-labelledby="graph-tab" class="graph-view" hidden></div>
+          <div id="data-view" role="tabpanel" aria-labelledby="data-tab" class="data-view" hidden></div>
+        </section>
+        <div class="evidence-row"><section class="camera-panel panel"><div class="panel-heading"><h2>Synthetic observation</h2><span class="tiny-label">CAM-A1</span></div><div id="camera-feed" class="camera-feed"></div><div id="camera-caption" class="camera-caption">Illustrated placeholder · Awaiting camera event</div></section><section class="sensor-panel panel"><div class="panel-heading"><h2>Sensor status</h2><span class="tiny-label">5 BUNDLES</span></div><div id="sensor-list" class="sensor-list"></div><p class="sensor-footnote">Latest received reading per source</p></section></div>
+      </section>
+      <aside class="inspector panel" aria-label="Alert queue and incident details"><div class="panel-heading"><h2>Alert queue</h2><span id="alert-count" class="count">00</span></div><div id="alert-queue" class="alert-queue"></div><div id="inspector-content" class="inspector-content"></div></aside>
+    </div>
+    <section class="playback" aria-label="Playback controls"><button id="pause-button" class="secondary" disabled>Ⅱ Pause</button><button id="step-button" class="icon-button" aria-label="Next event" title="Next event" disabled>▸|</button><span id="playback-label" class="playback-label">Ready to simulate</span><input id="scrubber" type="range" min="0" max="14" value="0" aria-label="Displayed event count" disabled><span id="playback-count" class="mono">00 / 14</span><label class="speed-label" for="speed">Speed<select id="speed"><option value="1400">1×</option><option value="700">2×</option><option value="2800">0.5×</option></select></label><button id="export-button" class="text-button" disabled>Export evidence ↓</button></section>
+    <footer><div><span class="footer-mark">B /</span> BLACKSITE <span class="footer-separator">·</span> ESSEC AI FOR BUSINESS / AAA</div><div><label class="motion-toggle"><input id="reduce-motion" type="checkbox"> Reduce motion</label><span class="footer-separator">·</span><span>SIMULATED OBSERVATIONS ≠ CONFIRMED FACTS</span></div></footer>
+  </main>
+  <div id="announcement" class="sr-only" aria-live="polite"></div>
+  <dialog id="method-dialog"><div class="dialog-heading"><span class="eyebrow">BLACKSITE / METHODOLOGY</span><button id="close-method" class="icon-button" aria-label="Close methodology">×</button></div><h2>From signal to review.</h2><p>One local ML model, explicit correlation rules, and a score you can inspect.</p><div class="method-step"><b>01</b><div><h3>Detect unusual readings</h3><p>Isolation Forest fits 200 trees to 1,000 synthetic baseline rows (seed 42). It examines voltage, temperature, particles, and vibration. A negative decision value flags an anomaly. The 2% contamination setting defines a training threshold; it is not an accuracy claim.</p></div></div><div class="method-step"><b>02</b><div><h3>Link relevant observations</h3><p>Rules connect related event types within 120 seconds in the same zone, or the same event type in adjacent zones. NetworkX stores facility, zones, sources, observations, and links. Correlation does not demonstrate causation.</p></div></div><div class="method-step"><b>03</b><div><h3>Explain the review priority</h3><p>Priority = anomaly (up to 55) + independent corroboration (up to 25) + authored severity (up to 20) − contradiction (up to 20), bounded to 0–100. Repeated reports from one source count once. This is a review heuristic, not a probability.</p></div></div><div class="method-limit"><strong>What the application does not establish</strong><p>Camera observations and field reports are authored scenario inputs. No computer vision or language model interprets them. No real-world accuracy, identity, intent, cause, or attack prediction is claimed. An analyst must verify every alert.</p></div></dialog>
+</body>
+</html>

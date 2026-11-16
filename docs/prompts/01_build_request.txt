@@ -1,0 +1,99 @@
+We need to build our group’s final assignment for ESSEC’s SPOC AI for Business, Advanced AI Algorithms (AAA).
+
+DEADLINE: tomorrow, November 17, 23:59. Prioritize a complete, working, reproducible deliverable over unnecessary polish.
+
+## Assignment requirements
+
+Build an AI application that goes beyond the course content and can be reproduced from its code. Deliver:
+1. A working application that can be demonstrated in a video.
+2. Reproducible code.
+3. The data used by the application.
+4. A clearly explained user guide.
+5. Citations for datasets and packages.
+6. A truthful record of the AI tools used and the prompts used to create the deliverables.
+
+The group is handling the video separately. Build the app and supporting materials so the group can record a convincing 4:30–5:30 demo of the real application.
+
+## Product concept
+
+Product name: BLACKSITE
+Tagline: “See the signal. Understand the incident.”
+
+BLACKSITE is a simulated crisis-operations intelligence dashboard. It combines authorized or simulated camera observations, sensor readings, and field reports into one operational picture. It detects unusual events, links related signals, and explains why an analyst should review them.
+
+The app is for understanding a simulated crisis, not directing real-world military operations. Use a wholly fictional facility and entirely synthetic data. Do not connect to real cameras, external surveillance systems, real military networks, or live operational feeds. Do not implement face recognition, person identification, target selection, weapon guidance, or tactical attack recommendations. The dashboard must clearly label itself “SIMULATION — SYNTHETIC DATA ONLY.”
+
+## First: inspect the workspace
+
+Before changing anything:
+- Inspect the current repository, files, and environment.
+- Check for existing project work, dependencies, and instructions such as AGENTS.md.
+- Preserve and build on any relevant existing work; do not overwrite files blindly.
+- If there is no existing app, choose the fastest reliable way to build a local browser-based application. Prefer a simple Python app such as Streamlit if that is the quickest route to a complete, reproducible result.
+- Avoid paid APIs, API keys, cloud services, and heavyweight model downloads. The core demo must run locally and offline after dependencies are installed.
+
+## Core demo scenario
+
+Create a fictional facility called “Northstar Station” and a fictional crisis scenario called “Nightfall.”
+
+The scenario should include a short timeline of synthetic signals, for example:
+- A power-quality sensor reports an unusual voltage fluctuation in one zone.
+- A synthetic camera observation reports a visual anomaly, such as smoke-like haze or an unexpected blocked corridor. Represent camera feeds with generated or clearly synthetic visuals/placeholders, not real surveillance footage.
+- A synthetic field report mentions a local equipment fault.
+- A second sensor reading either corroborates or contradicts the initial signal.
+
+The user should be able to press a clear “Run simulation” button and see the application process these events. Include at least one alternative scenario or a control that changes the event stream so the output visibly changes.
+
+## AI functionality: make it real, explainable, and reproducible
+
+Implement actual local computation, not just static AI labels:
+- Use anomaly detection on deterministic synthetic multivariate sensor data. A suitable approach is scikit-learn IsolationForest, with a fixed random seed and documented features.
+- Use event correlation to link signals by time, zone, and event type. Show the related events and explain the correlation in plain language.
+- Represent the facility and its zones/sensors/events as a graph using a suitable lightweight method, such as NetworkX. Show a simple incident graph or dependency view.
+- Compute a transparent incident-priority score from anomaly score, corroborating signals, and event severity. Display the factors that contributed to the score.
+- Make uncertainty visible: distinguish detected anomalies from confirmed facts and clearly state when an analyst needs to verify an alert.
+- Do not imply that the system can predict attacks or determine who caused an incident.
+
+If a dependency is unavailable or installing it would put the deadline at risk, implement a transparent, documented fallback with standard Python. Do not fabricate model performance or claim an algorithm is being used unless the code actually uses it.
+
+## Interface and visual direction
+
+Build a polished, screen-recording-friendly desktop interface:
+- Dark command-center aesthetic, near-black/navy background, restrained red/orange alerts, readable typography, crisp spacing.
+- Make it look like a serious crisis-operations product, not a game UI or a generic chatbot.
+- Main dashboard: facility map or schematic, incident timeline, alert queue, sensor status, event-correlation graph, and an incident detail panel.
+- Use fictional labels and fictional coordinates only.
+- Include visible status labels such as “SIMULATION,” “SYNTHETIC FEED,” “ANALYST REVIEW REQUIRED,” and “UNCERTAINTY.”
+- Keep animations subtle and optional; usability and legibility matter more than visual effects.
+- Ensure the app’s initial screen immediately communicates what BLACKSITE does and makes the demo scenario easy to launch.
+
+## Data and reproducibility
+
+- Generate deterministic synthetic data with a fixed random seed.
+- Save the generated input data in the repository, preferably CSV or JSON, so the instructor can inspect it.
+- Include a small script or documented command for regenerating the synthetic data.
+- Include all required source code and dependency/version information.
+- The app must not silently depend on files outside the project directory or on my personal machine.
+
+## Required deliverables
+
+Create or update these items in the project:
+1. The runnable application.
+2. A `README.md` with exact setup and run commands, prerequisites, feature overview, and known limitations.
+3. A `USER_GUIDE.md` that explains the user flow step by step, including how to launch the scenario, interpret alerts, inspect event links, and understand uncertainty.
+4. A `data/` directory containing the synthetic input data and a short explanation of its schema.
+5. A `requirements.txt` or equivalent dependency lock/list with appropriate versions.
+6. A `SOURCES.md` listing the source and purpose of every package, dataset, and borrowed code component. Clearly mark the synthetic dataset as generated for this assignment.
+7. An `AI_PROMPTS.md` documenting the actual prompts used with AI tools during development. Do not invent a history of prompts or claim tools were used when they were not. Record the prompts used for this build and leave room for the group to add any prompts they use for the video.
+8. A short `CONTRIBUTIONS.md` template for the group to fill in accurately, listing each member’s real contributions. Do not fabricate anyone’s work.
+
+## Build order
+
+1. Inspect the workspace and summarize the existing state briefly.
+2. Implement the smallest complete, working application.
+3. Add the synthetic data and all required documentation.
+4. Run the app and check the full primary user flow manually. Fix blocking errors.
+5. Check that the README commands match the actual files and app behavior.
+6. Report exactly what is complete, what command runs the app, where each deliverable is, what remains for the group, and any limitations. Do not claim deployment or testing you did not perform.
+
+Focus on a convincing working demo and a clean handoff to the group recording the video.

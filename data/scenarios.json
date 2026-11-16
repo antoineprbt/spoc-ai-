@@ -1,0 +1,761 @@
+[
+  {
+    "id": "nightfall",
+    "name": "Nightfall",
+    "description": "Power disturbance with corroborating observations",
+    "synthetic": true,
+    "date": "2030-02-17",
+    "events": [
+      {
+        "id": "E01",
+        "seconds": 0,
+        "time": "22:14:00",
+        "source_id": "PQ-A1",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E02",
+        "seconds": 5,
+        "time": "22:14:05",
+        "source_id": "ENV-B1",
+        "zone": "B",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E03",
+        "seconds": 10,
+        "time": "22:14:10",
+        "source_id": "ENV-C1",
+        "zone": "C",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E04",
+        "seconds": 15,
+        "time": "22:14:15",
+        "source_id": "ENV-D1",
+        "zone": "D",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E05",
+        "seconds": 20,
+        "time": "22:14:20",
+        "source_id": "ENV-A2",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E06",
+        "seconds": 40,
+        "time": "22:14:40",
+        "source_id": "PQ-A1",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "power",
+        "title": "Voltage disturbance",
+        "message": "Voltage and vibration depart from the normal regime.",
+        "stance": "support",
+        "severity": 0.65,
+        "readings": {
+          "voltage_v": 198,
+          "temperature_c": 27,
+          "particles_ug_m3": 10,
+          "vibration_mm_s": 0.18
+        }
+      },
+      {
+        "id": "E07",
+        "seconds": 58,
+        "time": "22:14:58",
+        "source_id": "CAM-A1",
+        "zone": "A",
+        "kind": "camera",
+        "event_type": "visibility",
+        "title": "Smoke-like haze",
+        "message": "Authored camera observation: haze-like shapes near the equipment bay. Smoke is not verified.",
+        "stance": "support",
+        "severity": 0.6,
+        "visual": "haze"
+      },
+      {
+        "id": "E08",
+        "seconds": 76,
+        "time": "22:15:16",
+        "source_id": "FIELD-A",
+        "zone": "A",
+        "kind": "field",
+        "event_type": "equipment",
+        "title": "Equipment fault reported",
+        "message": "Fictional technician reports a stopped fan and an unusual odor at cabinet A-3; cause unverified.",
+        "stance": "support",
+        "severity": 0.75
+      },
+      {
+        "id": "E09",
+        "seconds": 83,
+        "time": "22:15:23",
+        "source_id": "CAM-B1",
+        "zone": "B",
+        "kind": "camera",
+        "event_type": "routine",
+        "title": "Corridor remains clear",
+        "message": "Authored camera observation: service corridor unobstructed.",
+        "stance": "neutral",
+        "severity": 0,
+        "visual": "corridor"
+      },
+      {
+        "id": "E10",
+        "seconds": 95,
+        "time": "22:15:35",
+        "source_id": "ENV-A2",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "environment",
+        "title": "Environment shift",
+        "message": "A second sensor bundle reports elevated temperature, particles, and vibration.",
+        "stance": "support",
+        "severity": 0.8,
+        "readings": {
+          "voltage_v": 205,
+          "temperature_c": 37,
+          "particles_ug_m3": 82,
+          "vibration_mm_s": 0.24
+        }
+      },
+      {
+        "id": "E11",
+        "seconds": 110,
+        "time": "22:15:50",
+        "source_id": "ENV-C1",
+        "zone": "C",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Cooling plant nominal",
+        "message": "No unusual shift in the cooling plant bundle.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E12",
+        "seconds": 125,
+        "time": "22:16:05",
+        "source_id": "PQ-A1",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "power",
+        "title": "Disturbance persists",
+        "message": "The original power source repeats its unusual reading; repetition is not an independent source.",
+        "stance": "support",
+        "severity": 0.75,
+        "readings": {
+          "voltage_v": 201,
+          "temperature_c": 35,
+          "particles_ug_m3": 67,
+          "vibration_mm_s": 0.2
+        }
+      },
+      {
+        "id": "E13",
+        "seconds": 143,
+        "time": "22:16:23",
+        "source_id": "FIELD-A",
+        "zone": "A",
+        "kind": "field",
+        "event_type": "equipment",
+        "title": "Fault indicator reported",
+        "message": "The same fictional technician reports a panel fault indicator. This is a follow-up, not another independent source.",
+        "stance": "support",
+        "severity": 0.8
+      },
+      {
+        "id": "E14",
+        "seconds": 160,
+        "time": "22:16:40",
+        "source_id": "ENV-D1",
+        "zone": "D",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Operations nominal",
+        "message": "Operations bundle remains near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      }
+    ]
+  },
+  {
+    "id": "sensor_drift",
+    "name": "Sensor drift",
+    "description": "An isolated signal challenged by independent sources",
+    "synthetic": true,
+    "date": "2030-02-17",
+    "events": [
+      {
+        "id": "E01",
+        "seconds": 0,
+        "time": "22:14:00",
+        "source_id": "PQ-A1",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E02",
+        "seconds": 5,
+        "time": "22:14:05",
+        "source_id": "ENV-B1",
+        "zone": "B",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E03",
+        "seconds": 10,
+        "time": "22:14:10",
+        "source_id": "ENV-C1",
+        "zone": "C",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E04",
+        "seconds": 15,
+        "time": "22:14:15",
+        "source_id": "ENV-D1",
+        "zone": "D",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E05",
+        "seconds": 20,
+        "time": "22:14:20",
+        "source_id": "ENV-A2",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E06",
+        "seconds": 40,
+        "time": "22:14:40",
+        "source_id": "PQ-A1",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "power",
+        "title": "Voltage disturbance",
+        "message": "The power bundle reports voltage and vibration shifts; temperature and particles remain nominal.",
+        "stance": "support",
+        "severity": 0.45,
+        "readings": {
+          "voltage_v": 198,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.16
+        }
+      },
+      {
+        "id": "E07",
+        "seconds": 58,
+        "time": "22:14:58",
+        "source_id": "CAM-A1",
+        "zone": "A",
+        "kind": "camera",
+        "event_type": "visibility",
+        "title": "Annex appears clear",
+        "message": "Authored camera observation: clear equipment bay; no visible haze. A clear view cannot rule out a fault.",
+        "stance": "contradict",
+        "severity": 0,
+        "visual": "clear"
+      },
+      {
+        "id": "E08",
+        "seconds": 76,
+        "time": "22:15:16",
+        "source_id": "FIELD-A",
+        "zone": "A",
+        "kind": "field",
+        "event_type": "equipment",
+        "title": "Local check recorded",
+        "message": "Fictional technician reports a normal handheld voltage reading and no fault indicator.",
+        "stance": "contradict",
+        "severity": 0
+      },
+      {
+        "id": "E09",
+        "seconds": 83,
+        "time": "22:15:23",
+        "source_id": "CAM-B1",
+        "zone": "B",
+        "kind": "camera",
+        "event_type": "routine",
+        "title": "Corridor remains clear",
+        "message": "Authored camera observation: service corridor unobstructed.",
+        "stance": "neutral",
+        "severity": 0,
+        "visual": "corridor"
+      },
+      {
+        "id": "E10",
+        "seconds": 95,
+        "time": "22:15:35",
+        "source_id": "ENV-A2",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "environment",
+        "title": "Independent reading nominal",
+        "message": "The independent bundle remains near the normal reference regime.",
+        "stance": "contradict",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E11",
+        "seconds": 110,
+        "time": "22:15:50",
+        "source_id": "ENV-C1",
+        "zone": "C",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Cooling plant nominal",
+        "message": "No unusual shift in the cooling plant bundle.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E12",
+        "seconds": 125,
+        "time": "22:16:05",
+        "source_id": "PQ-A1",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "power",
+        "title": "Disturbance persists",
+        "message": "The original power source repeats its unusual reading; repetition is not an independent source.",
+        "stance": "support",
+        "severity": 0.45,
+        "readings": {
+          "voltage_v": 197,
+          "temperature_c": 22.2,
+          "particles_ug_m3": 9.1,
+          "vibration_mm_s": 0.17
+        }
+      },
+      {
+        "id": "E13",
+        "seconds": 143,
+        "time": "22:16:23",
+        "source_id": "FIELD-A",
+        "zone": "A",
+        "kind": "field",
+        "event_type": "equipment",
+        "title": "Follow-up check recorded",
+        "message": "The same technician again reports normal local conditions; a sensor fault remains a hypothesis.",
+        "stance": "contradict",
+        "severity": 0
+      },
+      {
+        "id": "E14",
+        "seconds": 160,
+        "time": "22:16:40",
+        "source_id": "ENV-D1",
+        "zone": "D",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Operations nominal",
+        "message": "Operations bundle remains near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      }
+    ]
+  },
+  {
+    "id": "routine",
+    "name": "Routine operations",
+    "description": "Control stream with nominal observations",
+    "synthetic": true,
+    "date": "2030-02-17",
+    "events": [
+      {
+        "id": "E01",
+        "seconds": 0,
+        "time": "22:14:00",
+        "source_id": "PQ-A1",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E02",
+        "seconds": 5,
+        "time": "22:14:05",
+        "source_id": "ENV-B1",
+        "zone": "B",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E03",
+        "seconds": 10,
+        "time": "22:14:10",
+        "source_id": "ENV-C1",
+        "zone": "C",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E04",
+        "seconds": 15,
+        "time": "22:14:15",
+        "source_id": "ENV-D1",
+        "zone": "D",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E05",
+        "seconds": 20,
+        "time": "22:14:20",
+        "source_id": "ENV-A2",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Baseline received",
+        "message": "Synthetic readings are near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E06",
+        "seconds": 40,
+        "time": "22:14:40",
+        "source_id": "PQ-A1",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "power",
+        "title": "Stable power",
+        "message": "The power bundle reports nominal readings.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E07",
+        "seconds": 58,
+        "time": "22:14:58",
+        "source_id": "CAM-A1",
+        "zone": "A",
+        "kind": "camera",
+        "event_type": "visibility",
+        "title": "Annex appears clear",
+        "message": "Authored camera observation: clear equipment bay; no visible haze. A clear view cannot rule out a fault.",
+        "stance": "neutral",
+        "severity": 0,
+        "visual": "clear"
+      },
+      {
+        "id": "E08",
+        "seconds": 76,
+        "time": "22:15:16",
+        "source_id": "FIELD-A",
+        "zone": "A",
+        "kind": "field",
+        "event_type": "equipment",
+        "title": "Local check recorded",
+        "message": "Fictional maintenance check reports normal equipment operation.",
+        "stance": "neutral",
+        "severity": 0
+      },
+      {
+        "id": "E09",
+        "seconds": 83,
+        "time": "22:15:23",
+        "source_id": "CAM-B1",
+        "zone": "B",
+        "kind": "camera",
+        "event_type": "routine",
+        "title": "Corridor remains clear",
+        "message": "Authored camera observation: service corridor unobstructed.",
+        "stance": "neutral",
+        "severity": 0,
+        "visual": "corridor"
+      },
+      {
+        "id": "E10",
+        "seconds": 95,
+        "time": "22:15:35",
+        "source_id": "ENV-A2",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "environment",
+        "title": "Independent reading nominal",
+        "message": "The independent bundle remains near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E11",
+        "seconds": 110,
+        "time": "22:15:50",
+        "source_id": "ENV-C1",
+        "zone": "C",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Cooling plant nominal",
+        "message": "No unusual shift in the cooling plant bundle.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E12",
+        "seconds": 125,
+        "time": "22:16:05",
+        "source_id": "PQ-A1",
+        "zone": "A",
+        "kind": "sensor",
+        "event_type": "power",
+        "title": "Power remains nominal",
+        "message": "A second nominal reading arrives from the power bundle.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      },
+      {
+        "id": "E13",
+        "seconds": 143,
+        "time": "22:16:23",
+        "source_id": "FIELD-A",
+        "zone": "A",
+        "kind": "field",
+        "event_type": "equipment",
+        "title": "Follow-up check recorded",
+        "message": "Routine inspection complete; no new issue reported.",
+        "stance": "neutral",
+        "severity": 0
+      },
+      {
+        "id": "E14",
+        "seconds": 160,
+        "time": "22:16:40",
+        "source_id": "ENV-D1",
+        "zone": "D",
+        "kind": "sensor",
+        "event_type": "routine",
+        "title": "Operations nominal",
+        "message": "Operations bundle remains near the normal reference regime.",
+        "stance": "neutral",
+        "severity": 0,
+        "readings": {
+          "voltage_v": 230.2,
+          "temperature_c": 22.1,
+          "particles_ug_m3": 9.2,
+          "vibration_mm_s": 0.081
+        }
+      }
+    ]
+  }
+]

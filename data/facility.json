@@ -1,0 +1,108 @@
+{
+  "name": "Northstar Station",
+  "fictional": true,
+  "seed": 42,
+  "coordinate_system": "Fictional local drawing units; no geographic coordinates",
+  "zones": [
+    {
+      "id": "A",
+      "name": "Power annex",
+      "x": 145,
+      "y": 135,
+      "width": 230,
+      "height": 150
+    },
+    {
+      "id": "B",
+      "name": "Service corridor",
+      "x": 405,
+      "y": 135,
+      "width": 255,
+      "height": 95
+    },
+    {
+      "id": "C",
+      "name": "Cooling plant",
+      "x": 145,
+      "y": 325,
+      "width": 230,
+      "height": 150
+    },
+    {
+      "id": "D",
+      "name": "Operations",
+      "x": 405,
+      "y": 270,
+      "width": 255,
+      "height": 205
+    }
+  ],
+  "adjacent_zones": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "A",
+      "C"
+    ],
+    [
+      "B",
+      "D"
+    ],
+    [
+      "C",
+      "D"
+    ]
+  ],
+  "sources": [
+    {
+      "id": "PQ-A1",
+      "zone": "A",
+      "kind": "sensor",
+      "name": "Power-quality bundle"
+    },
+    {
+      "id": "ENV-A2",
+      "zone": "A",
+      "kind": "sensor",
+      "name": "Independent environment bundle"
+    },
+    {
+      "id": "ENV-B1",
+      "zone": "B",
+      "kind": "sensor",
+      "name": "Corridor sensor bundle"
+    },
+    {
+      "id": "ENV-C1",
+      "zone": "C",
+      "kind": "sensor",
+      "name": "Cooling sensor bundle"
+    },
+    {
+      "id": "ENV-D1",
+      "zone": "D",
+      "kind": "sensor",
+      "name": "Operations sensor bundle"
+    },
+    {
+      "id": "CAM-A1",
+      "zone": "A",
+      "kind": "camera",
+      "name": "Annex schematic camera"
+    },
+    {
+      "id": "CAM-B1",
+      "zone": "B",
+      "kind": "camera",
+      "name": "Corridor schematic camera"
+    },
+    {
+      "id": "FIELD-A",
+      "zone": "A",
+      "kind": "field",
+      "name": "Fictional maintenance log"
+    }
+  ]
+}

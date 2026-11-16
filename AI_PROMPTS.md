@@ -1,0 +1,36 @@
+# AI use and actual prompts
+
+## Disclosure for this build
+
+**Date:** 16 November 2026. **Tool:** OpenAI Codex, the coding assistant in the Codex desktop application. The exact deployed backend model identifier is not independently exposed in the project artifacts; no specific model version is claimed here.
+
+The user supplied the BLACKSITE concept and implementation brief. Codex inspected an empty workspace, selected the local Python/browser approach, and generated the application, deterministic data generator, original SVG illustrations, tests, and draft documentation. Codex also ran terminal commands, consulted official package documentation, and exercised the local application in the integrated browser. Package installation used PyPI. The app itself does not call Codex or any AI provider.
+
+**Actual build prompt:** [docs/prompts/01_build_request.txt](docs/prompts/01_build_request.txt). This is the verbatim attached request, beginning “We need to build our group's final assignment for ESSEC's SPOC AI for Business, Advanced AI Algorithms (AAA).” The preserved file retains the original spelling and punctuation. It contains the product concept, safety boundary, features, design brief, reproducibility requirements, and requested deliverables.
+
+There was one task-specific user prompt for the initial build. The assistant's coding, debugging, and validation steps occurred within that conversation; they are not presented as invented follow-up prompts. General user coding preferences and system instructions are not a fabricated prompt history and are not reproduced here. The installed `frontend-skill` provided additional design guidance during the build.
+
+No separate AI subagents, image-generation model, video-generation model, paid inference API, or runtime language model was used. Camera/report labels are authored synthetic inputs. Isolation Forest is the application's runtime machine-learning component, distinct from the AI coding assistant used during development.
+
+## Development decisions and revisions (a log, not additional prompts)
+
+| Observed action | Reason / outcome |
+|---|---|
+| Chose standard-library Python HTTP server + static browser UI | Minimal local setup with direct control over the requested dashboard layout |
+| Installed exact scikit-learn, NetworkX, and numerical dependency versions | Actual local algorithms, reproducible installation |
+| Generated 1,000 reference rows and three 14-event streams | Inspectable synthetic inputs with no personal or external data |
+| First voltage-only drift fixture did not cross the fitted threshold | Revised the fictional faulty bundle to shift voltage and vibration; disclosed as fixture construction, not measured accuracy |
+| Implemented prefix snapshots and source-ID deduplication | Avoid future-evidence leakage and inflated corroboration from repeated reports |
+| Tested local computation and browser controls | Fix implementation issues and distinguish verified behavior from claims |
+
+This file describes AI involvement honestly; it does **not** establish any group member's individual contribution. Complete `CONTRIBUTIONS.md` with the work each person actually performs. The group should read and be able to explain the code and limitations before recording or submitting it.
+
+## Add real later prompts here
+
+Do not fill this table with hypothetical prompts. Add only prompts that were actually sent, including prompts used to prepare the video, voiceover, editing, slides, or later code revisions. If no AI is used for the video, write that fact instead.
+
+| Date | Group member | AI tool and model if known | Exact prompt or attached transcript path | Output used | Human checks / corrections |
+|---|---|---|---|---|---|
+| [Fill after use] | | | | | |
+
+For a long prompt, save its verbatim text as a new numbered file in `docs/prompts/` and reference that file. Retain failed or revised prompts when they materially contributed to the deliverable; do not retroactively rewrite them as if they were the original instructions.

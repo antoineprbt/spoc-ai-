@@ -1,0 +1,6 @@
+.venv
+.git
+submission
+docs/screenshots
+__pycache__
+tests
