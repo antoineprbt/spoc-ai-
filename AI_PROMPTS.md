@@ -40,3 +40,11 @@ For a long prompt, save its verbatim text as a new numbered file in `docs/prompt
 > ok , btwon bosse ds le rpeo github spoc-ai ( lui [https://github.com/antoineprbt/spoc-ai-](https://github.com/antoineprbt/spoc-ai-)) et btw je veux pas avoir à lanceru ne ocmmande pr relancer ! déploei sur vercel !
 
 Codex added a Vercel Python adapter, pushed the project to that repository, and deployed the same engine as a hosted application. This supersedes the initial local-only delivery scope; offline reproduction remains supported.
+
+## Suggested technical questions — not historical prompts
+
+The following questions were drafted by Codex at the user's request as possible technical discussion topics. They were not asked during the original build and are not evidence of a group member's prior technical work. If actually used later, record that exchange and its outcome separately.
+
+1. **Abstraction boundaries:** “How does separating the inference engine, HTTP adapter, and browser presentation let us reuse the same computation locally and on Vercel? Identify where transport concerns still leak into the application and explain whether another abstraction would justify its complexity.”
+2. **API and deployment lifecycle:** “Trace a POST to /api/run from the Vercel rewrite through the Python handler to the returned snapshots. Which work happens during deployment, on a cold start, and on each request? What changes would avoid repeated model fitting without introducing stale model or dataset versions?”
+3. **Temporal correctness:** “What invariants ensure that replaying an earlier snapshot cannot use future observations or count repeated reports as independent corroboration? Explain how the current tests exercise those invariants and describe a counterexample that would expose a flawed implementation.”
