@@ -1,29 +1,30 @@
-# Group contributions — complete before submission
+# Group contributions — review before submission
 
 **Course:** ESSEC SPOC AI for Business / Advanced AI Algorithms (AAA)  
 **Project:** BLACKSITE  
-**Group number:** [Fill in]  
-**Submission date:** [Fill in]
+**Group number:** 2  
+**Contribution record last updated:** 16 November 2026  
+**Submission date:** Pending final Moodle upload
 
-This template intentionally makes no claims about any person's work. Replace the placeholders with the actual group members and their actual contributions. AI-generated code and text are disclosed separately in `AI_PROMPTS.md`; do not claim them as unaided human work.
+This records only contributions currently established. Each group member should review and complete their own row. AI assistance is disclosed in `AI_PROMPTS.md`; the application was built with Codex assistance, not as unaided human coding.
 
-| Member name | Actual work performed | Concrete evidence (file, review, correction, demo segment) | What they can explain or reproduce |
+| Member name | Actual work performed | Concrete evidence | What they can explain or reproduce |
 |---|---|---|---|
-| [Member 1] | [Fill accurately] | | |
-| [Member 2] | [Fill accurately] | | |
-| [Member 3] | [Fill accurately] | | |
-| [Add/remove rows to match the real group] | | | |
+| Antoine Préaubert | Led the BLACKSITE product build with Codex: conceived the product and crisis-simulation use case, defined the scope and requirements, directed the AI-assisted implementation, and arranged the hosted demo. | Product brief: `docs/prompts/01_build_request.txt`; implementation and documentation in this repository; hosted demo: https://spoc-ai-blacksite.vercel.app | Product concept, scope, user flow, and simulation boundaries. Review `METHODOLOGY.md` and rehearse the demo before claiming detailed understanding of the model and scoring. |
+| Other group members | To be completed and confirmed by each member. | Add the specific files, review, corrections, or video segment. | State what the member can personally explain or reproduce. |
 
 ## Group verification
 
+- [ ] Members have completed and reviewed their own contribution statements.
 - [ ] Names and student identifiers, if required by the course, are accurate.
-- [ ] Each member has reviewed their stated contribution.
-- [ ] The group has run the app and can explain the model, rules, score, and uncertainty.
-- [ ] Someone other than the original development environment has attempted setup, if time permits; record the actual result below.
-- [ ] AI prompt records include any later video or editing assistance.
+- [ ] The group has rehearsed the app and can explain the model, rules, score, and uncertainty.
+- [ ] Another member has tried the hosted demo or local setup; record the actual result below.
+- [ ] `AI_PROMPTS.md` includes any later prompts used for video or editing.
 - [ ] The final video shows the real app and avoids fabricated performance or deployment claims.
-- [ ] All submission files and the final video have been uploaded to the required portal by the deadline.
+- [ ] The ZIP/source code, data, user guide, and final video have been uploaded to Moodle.
 
-**Independent setup / rehearsal outcome:** [Who, date, environment, result; leave blank until performed.]
+**Independent setup / rehearsal outcome:** Pending; record who tested, when, environment, and result.
 
-**Final upload owner and confirmation:** [Fill accurately after upload.]
+**Video owner and actual contribution:** Pending group confirmation.
+
+**Final upload owner and confirmation:** Pending Moodle submission.
