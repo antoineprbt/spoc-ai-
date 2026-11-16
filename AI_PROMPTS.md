@@ -45,6 +45,22 @@ Codex added a Vercel Python adapter, pushed the project to that repository, and 
 
 The following questions were drafted by Codex at the user's request as possible technical discussion topics. They were not asked during the original build and are not evidence of a group member's prior technical work. If actually used later, record that exchange and its outcome separately.
 
+The user subsequently asked about the API/deployment lifecycle. That actual exchange is recorded below; the suggested English wording is not substituted for the user's original prompt.
+
 1. **Abstraction boundaries:** “How does separating the inference engine, HTTP adapter, and browser presentation let us reuse the same computation locally and on Vercel? Identify where transport concerns still leak into the application and explain whether another abstraction would justify its complexity.”
 2. **API and deployment lifecycle:** “Trace a POST to /api/run from the Vercel rewrite through the Python handler to the returned snapshots. Which work happens during deployment, on a cold start, and on each request? What changes would avoid repeated model fitting without introducing stale model or dataset versions?”
 3. **Temporal correctness:** “What invariants ensure that replaying an earlier snapshot cannot use future observations or count repeated reports as independent corroboration? Explain how the current tests exercise those invariants and describe a counterexample that would expose a flawed implementation.”
+
+## Actual technical follow-up — 16 November 2026
+
+**Context:** After Codex suggested technical discussion topics, the user asked the following question. This occurred after the initial build and deployment.
+
+**User prompt, verbatim:**
+
+> btw j(avais une question  ausissi fais uneé requête POST vers /api/run depuis la réécriture Verce l sur gestionnaire Python, unitl x instantanés renvoyés. b audéploiement  , au cold start, et à chaque requête il se passr quoi ?
+
+**Tool:** OpenAI Codex.
+
+**Response summary (not a verbatim transcript):** Codex inspected the repository's Vercel adapter, rewrite configuration, HTTP handler, engine, and browser code, and consulted Vercel's Python runtime documentation. It explained that deployment installs and bundles the application; a new Python instance constructs `Engine()` and fits Isolation Forest; each `/api/run` request validates the scenario, reuses that instance's model, and computes 14 prefix snapshots. A single JSON response contains all snapshots, which the browser subsequently plays back. It also explained that a new instance repeats model initialization and that the current routing can trigger initialization on the initial page request.
+
+**Use of output:** Technical explanation for understanding the implemented application. No code changes or performance measurements resulted from this exchange. No independent mastery or human verification is inferred from asking the question.
