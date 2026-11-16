@@ -71,4 +71,8 @@ An additional launch from an unrelated working directory confirmed that the appl
 
 ## Scope limits
 
-No deployment, external-camera integration, real-world validation, independent user study, or submitted video was performed. No claim is made that a different person's machine has been tested. Windows instructions are supplied but were not manually exercised. The group must complete its own names, contributions, rehearsal, video, and final upload.
+Initial local verification included no deployment or external-camera integration; no real-world validation, independent user study, or submitted video was performed. No claim is made that a different person's machine has been tested. Windows instructions are supplied but were not manually exercised. The group must complete its own names, contributions, rehearsal, video, and final upload.
+
+## Hosted verification — 16 November 2026
+
+Production: https://spoc-ai-blacksite.vercel.app . Anonymous HTTPS requests returned 200 for the page, CSS, JavaScript, health, and bootstrap. Actual POST requests for all three scenarios returned 14 frames with final anomaly counts 3 / 2 / 0 and priorities 96 / 14 / none. The GitHub repository is linked to the Vercel project for subsequent pushes. Hosted requests require internet; the original offline local mode remains available.
