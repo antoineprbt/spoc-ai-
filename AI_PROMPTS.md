@@ -31,7 +31,7 @@ Do not fill this table with hypothetical prompts. Add only prompts that were act
 
 | Date | Group member | AI tool and model if known | Exact prompt or attached transcript path | Output used | Human checks / corrections |
 |---|---|---|---|---|---|
-| [Fill after use] | | | | | |
+| 17 Nov 2026 | Oscar Leprince | Claude (Anthropic), via claude.ai | Asked Claude to read `DEMO_RUNBOOK.md` and help with the script and structure for the 5-minute video; follow-up requests to reword two scenes and for help recording on a Mac. | Script draft and scene structure for the demo video | Checked every scene against the live app, adjusted the wording, and recorded, narrated and edited the video myself. |
 
 For a long prompt, save its verbatim text as a new numbered file in `docs/prompts/` and reference that file. Retain failed or revised prompts when they materially contributed to the deliverable; do not retroactively rewrite them as if they were the original instructions.
 
