@@ -64,3 +64,5 @@ The user subsequently asked about the API/deployment lifecycle. That actual exch
 **Response summary (not a verbatim transcript):** Codex inspected the repository's Vercel adapter, rewrite configuration, HTTP handler, engine, and browser code, and consulted Vercel's Python runtime documentation. It explained that deployment installs and bundles the application; a new Python instance constructs `Engine()` and fits Isolation Forest; each `/api/run` request validates the scenario, reuses that instance's model, and computes 14 prefix snapshots. A single JSON response contains all snapshots, which the browser subsequently plays back. It also explained that a new instance repeats model initialization and that the current routing can trigger initialization on the initial page request.
 
 **Use of output:** Technical explanation for understanding the implemented application. No code changes or performance measurements resulted from this exchange. No independent mastery or human verification is inferred from asking the question.
+
+SRINITH DIDN'T MAKE ANY PROMPTS , 100% HUMAN CRAFT (and it's cool af) 
