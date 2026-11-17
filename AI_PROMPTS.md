@@ -65,4 +65,4 @@ The user subsequently asked about the API/deployment lifecycle. That actual exch
 
 **Use of output:** Technical explanation for understanding the implemented application. No code changes or performance measurements resulted from this exchange. No independent mastery or human verification is inferred from asking the question.
 
-SRINITH DIDN'T MAKE ANY PROMPTS , 100% HUMAN CRAFT (and it's cool af) 
+SRINITH and Yassine  DIDN'T MAKE ANY PROMPTS , 100% HUMAN CRAFT (and it's cool af) 
