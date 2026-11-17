@@ -65,4 +65,7 @@ The user subsequently asked about the API/deployment lifecycle. That actual exch
 
 **Use of output:** Technical explanation for understanding the implemented application. No code changes or performance measurements resulted from this exchange. No independent mastery or human verification is inferred from asking the question.
 
-SRINITH and Yassine  DIDN'T MAKE ANY PROMPTS , 100% HUMAN CRAFT (and it's cool af) 
+SRINITH  DIDN'T MAKE ANY PROMPTS , 100% HUMAN CRAFT (and it's cool af) 
+
+her's yassine prompts : 
+| 17 Nov 2026 | Yassine  | Claude (Anthropic): Claude Code and a Claude-based editing agent; AI voice "Andrew" (Microsoft, via edge-tts) | Gave Claude my shooting script for scenes 4–5 and asked it to run the on-screen actions and screen capture, add an AI voiceover (rewording my narration while keeping the same ideas), and write an editing brief; then asked the editing agent to assemble scenes 1–8 into one video (cuts, zooms, captions, audio levels). | Scenes 4–5 segment with AI voiceover; final edited video. | Wrote the shooting script, chose the voice, reviewed every take and asked for retakes, and checked the final edit. |
